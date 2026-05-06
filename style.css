@@ -450,3 +450,32 @@ h3 { letter-spacing: -0.03em; margin-bottom: 10px; }
   background:
     linear-gradient(145deg, rgba(6,63,104,0.16), rgba(255,255,255,0.86));
 }
+.home-planning-section {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.home-planning-link {
+  display: block;
+  max-width: 1050px;
+  margin: 0 auto;
+}
+
+.home-planning-image {
+  width: 100%;
+  display: block;
+  border-radius: 28px;
+  box-shadow: 0 24px 60px rgba(3, 29, 50, 0.16);
+  transition: transform 0.22s ease, box-shadow 0.22s ease;
+}
+
+.home-planning-link:hover .home-planning-image {
+  transform: translateY(-5px);
+  box-shadow: 0 34px 80px rgba(3, 29, 50, 0.22);
+}
+
+.center-button {
+  display: flex;
+  justify-content: center;
+  margin-top: 24px;
+}
