@@ -576,4 +576,12 @@ h3 {
   .footer-links {
     flex-wrap: wrap;
   }
+
+.planning-image {
+  width: 100%;
+  max-width: 1100px;
+  display: block;
+  margin: 30px auto 0;
+  border-radius: 28px;
+  box-shadow: 0 24px 60px rgba(3, 29, 50, 0.16);
 }
