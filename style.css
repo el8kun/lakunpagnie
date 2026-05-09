@@ -1,13 +1,21 @@
 :root {
-  --blue: #00a7e8;
-  --blue-dark: #063f68;
-  --cream: #f4ead7;
-  --brown: #8b623f;
-  --ink: #0d2233;
-  --muted: #6c7a86;
-  --card: rgba(255, 255, 255, 0.88);
-  --shadow: 0 24px 60px rgba(3, 29, 50, 0.16);
-  --radius: 28px;
+  --blue: #9fc8df;
+  --blue-light: #c7e3f2;
+  --blue-dark: #2f6f91;
+
+  --cream: #f4e8dc;
+  --cream-light: #fff7ef;
+
+  --brown: #c58b55;
+  --brown-dark: #8b5b32;
+
+  --white: #ffffff;
+  --ink: #20242b;
+  --muted: #6f747a;
+
+  --card: rgba(255, 248, 239, 0.88);
+  --shadow: 0 24px 60px rgba(91, 65, 42, 0.16);
+  --radius: 30px;
 }
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
@@ -16,9 +24,10 @@ body {
   font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   color: var(--ink);
   background:
-    radial-gradient(circle at 10% 10%, rgba(0, 167, 232, 0.20), transparent 28%),
-    radial-gradient(circle at 90% 4%, rgba(139, 98, 63, 0.16), transparent 24%),
-    linear-gradient(135deg, #f7fbff 0%, var(--cream) 100%);
+    radial-gradient(circle at -4% 2%, rgba(159, 200, 223, 0.78) 0 150px, transparent 151px),
+    radial-gradient(circle at 98% 18%, rgba(159, 200, 223, 0.55) 0 150px, transparent 151px),
+    radial-gradient(circle at 4% 85%, rgba(197, 139, 85, 0.28) 0 110px, transparent 111px),
+    linear-gradient(135deg, var(--cream-light) 0%, var(--cream) 100%);
   overflow-x: hidden;
 }
 a { color: inherit; text-decoration: none; }
@@ -166,7 +175,7 @@ h3 { letter-spacing: -0.03em; margin-bottom: 10px; }
 }
 .live-badge {
   position: absolute;
-  top: 28px;
+  top: 28px;    
   left: 28px;
   background: var(--blue-dark);
   color: white;
@@ -590,4 +599,142 @@ h3 { letter-spacing: -0.03em; margin-bottom: 10px; }
   .shorts-grid {
     grid-template-columns: 1fr;
   }
+}
+.site-header {
+  background: rgba(255, 247, 239, 0.82);
+  border-bottom: 1px solid rgba(197, 139, 85, 0.18);
+}
+
+.brand-mark {
+  background: linear-gradient(135deg, var(--brown), var(--brown-dark));
+  box-shadow: 0 12px 30px rgba(197, 139, 85, 0.28);
+}
+
+.brand span:last-child {
+  color: var(--brown-dark);
+}
+
+.nav-links a {
+  color: var(--brown-dark);
+}
+
+.nav-links a:hover {
+  color: var(--blue-dark);
+}
+.hero {
+  position: relative;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 70px;
+  right: -60px;
+  width: 260px;
+  height: 260px;
+  background: rgba(159, 200, 223, 0.42);
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  left: -80px;
+  bottom: 60px;
+  width: 180px;
+  height: 180px;
+  background: rgba(197, 139, 85, 0.18);
+  border-radius: 50%;
+  z-index: -1;
+}
+
+h1 {
+  color: var(--brown);
+  text-transform: uppercase;
+}
+
+h1 span {
+  color: var(--brown-dark);
+}
+
+.eyebrow {
+  color: var(--blue-dark);
+}
+
+.hero-card {
+  background:
+    linear-gradient(145deg, rgba(255, 247, 239, 0.95), rgba(255, 247, 239, 0.70)),
+    radial-gradient(circle at 80% 10%, rgba(159, 200, 223, 0.32), transparent 40%);
+  border: 1px solid rgba(197, 139, 85, 0.18);
+}
+
+.live-badge {
+  background: var(--brown);
+  color: white;
+}
+.btn-primary {
+  color: white;
+  background: linear-gradient(135deg, var(--brown), var(--brown-dark));
+  box-shadow: 0 18px 36px rgba(197, 139, 85, 0.24);
+}
+
+.btn-secondary {
+  color: var(--brown-dark);
+  background: rgba(255, 247, 239, 0.88);
+  border: 1px solid rgba(197, 139, 85, 0.24);
+}
+
+.btn-secondary:hover {
+  background: white;
+}
+.preview-card {
+  background:
+    linear-gradient(145deg, rgba(255, 247, 239, 0.96), rgba(255, 247, 239, 0.72));
+  border: 1px solid rgba(197, 139, 85, 0.18);
+}
+
+.preview-card::before {
+  background: rgba(159, 200, 223, 0.30);
+}
+
+.preview-card .card-icon {
+  background: rgba(255, 247, 239, 0.86);
+  border: 1px solid rgba(197, 139, 85, 0.18);
+}
+
+.preview-card span {
+  color: var(--blue-dark);
+}
+
+.preview-card strong {
+  color: var(--brown-dark);
+}
+
+.planning-card {
+  background: linear-gradient(145deg, rgba(159, 200, 223, 0.34), rgba(255, 247, 239, 0.88));
+}
+
+.video-card {
+  background: linear-gradient(145deg, rgba(197, 139, 85, 0.22), rgba(255, 247, 239, 0.88));
+}
+
+.capelinho-card {
+  background: linear-gradient(145deg, rgba(159, 200, 223, 0.28), rgba(255, 247, 239, 0.88));
+}
+
+.trophees-card {
+  background: linear-gradient(145deg, rgba(197, 139, 85, 0.26), rgba(255, 247, 239, 0.88));
+}
+
+.bd-card-home {
+  background: linear-gradient(145deg, rgba(47, 111, 145, 0.16), rgba(255, 247, 239, 0.88));
+}
+
+.cartes-card {
+  background: linear-gradient(145deg, rgba(159, 200, 223, 0.38), rgba(255, 247, 239, 0.88));
+}
+
+.sponsor-card {
+  background: linear-gradient(145deg, rgba(197, 139, 85, 0.20), rgba(255, 247, 239, 0.88));
 }
