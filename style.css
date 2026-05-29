@@ -738,3 +738,12 @@ h1 span {
 .sponsor-card {
   background: linear-gradient(145deg, rgba(197, 139, 85, 0.20), rgba(255, 247, 239, 0.88));
 }
+
+.bd-om-card {
+  background: linear-gradient(145deg, rgba(0, 167, 232, 0.18), rgba(255, 255, 255, 0.92));
+  border: 1px solid rgba(0, 167, 232, 0.22);
+}
+
+.bd-om-card .card-icon {
+  background: rgba(255, 255, 255, 0.85);
+}
