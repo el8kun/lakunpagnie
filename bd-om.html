@@ -1,76 +1,90 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>La Kunpagnie — BD OM</title>
-  <link rel="stylesheet" href="style.css" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+<title>La Kunpagnie — BD OM</title>
 </head>
 
 <body>
-  <header class="site-header">
-    <nav class="navbar">
-      <a href="index.html" class="brand">
-        <span class="brand-mark">K</span>
-        <span>La Kunpagnie</span>
-      </a>
+<header class="site-header">
+  <nav class="navbar">
+    <a href="index.html" class="brand"><span class="brand-mark">K</span><span>La Kunpagnie</span></a>
+    <button class="menu-toggle" aria-label="Ouvrir le menu">☰</button>
+    <div class="nav-links">
+      <a href="planning.html">Planning</a>
+      <a href="videos.html">Vidéos</a>
+      <a href="shorts.html">Shorts</a>
+      <a href="capelinho.html">Capelinho</a>
+      <a href="trophees.html">Trophées</a>
+      <a href="bd.html">BD</a>
+      <a href="bd-om.html">BD OM</a>
+      <a href="cartes.html">Cartes</a>
+      <a href="sponsors.html">Sponsors</a>
+    </div>
+  </nav>
+</header>
 
-      <button class="menu-toggle" aria-label="Ouvrir le menu">☰</button>
+<main>
+  <section class="section bd-om-hero-section">
+    <div class="section-heading center">
+      <p class="eyebrow">Nouvelle aventure</p>
+      <h1>BD <span>OM</span></h1>
+      <p>
+        Une nouvelle histoire dans l’univers Kun : Marseille est en crise, l’OM doit se reconstruire,
+        et deux jeunes joueurs vont devoir écrire leur légende.
+      </p>
+    </div>
 
-      <div class="nav-links">
-        <a href="planning.html">Planning</a>
-        <a href="videos.html">Vidéos</a>
-        <a href="shorts.html">Shorts</a>
-        <a href="capelinho.html">Capelinho</a>
-        <a href="trophees.html">Trophées</a>
-        <a href="bd.html">BD Capelinho</a>
-        <a href="bd-om.html">BD OM</a>
-        <a href="cartes.html">Cartes</a>
-        <a href="sponsors.html">Sponsors</a>
-      </div>
-    </nav>
-  </header>
-
-  <main>
-    <section class="section compact">
-      <div class="page-hero center">
-        <p class="eyebrow">Nouvelle aventure</p>
-        <h1>BD <span>OM</span></h1>
+    <div class="bd-om-intro-card">
+      <div>
+        <span class="bd-om-label">Projet BD</span>
+        <h2>Reconstruire et vaincre enfin</h2>
         <p>
-          L’histoire de Kun Capeluki, Aaron Tsunodo et Alex Kun dans une aventure marseillaise
-          entre crise, reconstruction et destin à écrire.
+          Suis l’aventure de Kun Capeluki, Aaron Tsunodo et Alex Kun dans une carrière narrative
+          autour de l’Olympique de Marseille.
         </p>
       </div>
+    </div>
+  </section>
 
-      <div class="bd-reading">
-        <article class="bd-page">
-          <span>Page 01</span>
-          <img src="om-page-01.png" alt="BD OM page 1">
-        </article>
-
-        <!-- Pour ajouter une page :
-        <article class="bd-page">
-          <span>Page 02</span>
-          <img src="om-page-02.png" alt="BD OM page 2">
-        </article>
-        -->
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div>
-      <strong>La Kunpagnie</strong>
-      <p>Le hub officiel de l’univers Kun.</p>
+  <section class="section">
+    <div class="section-heading center">
+      <p class="eyebrow">Lecture</p>
+      <h2>Les pages de la BD</h2>
+      <p>Les nouvelles planches seront ajoutées ici au fur et à mesure de l’aventure.</p>
     </div>
 
-    <div class="footer-links">
-      <a href="https://www.twitch.tv/el8kun" target="_blank">Twitch</a>
-      <a href="https://www.youtube.com/@EL8KUN" target="_blank">YouTube</a>
-      <a href="index.html">Accueil</a>
-    </div>
-  </footer>
+    <div class="bd-pages-grid">
 
-  <script src="script.js"></script>
+      <article class="bd-page-card">
+        <span>Page 01</span>
+        <img src="om-page-01.png" alt="BD OM Page 01">
+      </article>
+
+      <!-- Pour ajouter une nouvelle page, copie ce bloc :
+
+      <article class="bd-page-card">
+        <span>Page 02</span>
+        <img src="om-page-02.png" alt="BD OM Page 02">
+      </article>
+
+      -->
+
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div><strong>La Kunpagnie</strong><p>Le hub officiel de l’univers Kun.</p></div>
+  <div class="footer-links">
+    <a href="https://www.twitch.tv/el8kun" target="_blank" rel="noopener">Twitch</a>
+    <a href="https://www.youtube.com/@EL8KUNgaming" target="_blank" rel="noopener">YouTube</a>
+    <a href="index.html">Accueil</a>
+  </div>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
