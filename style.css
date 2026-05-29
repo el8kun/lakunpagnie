@@ -747,3 +747,94 @@ h1 span {
 .bd-om-card .card-icon {
   background: rgba(255, 255, 255, 0.85);
 }
+
+.bd-om-card {
+  background: linear-gradient(145deg, rgba(0, 167, 232, 0.18), rgba(255, 255, 255, 0.92));
+  border: 1px solid rgba(0, 167, 232, 0.22);
+}
+
+.bd-om-card .card-icon {
+  background: rgba(255, 255, 255, 0.85);
+}
+
+.bd-om-hero-section {
+  padding-bottom: 30px;
+}
+
+.bd-om-hero-section h1 {
+  font-size: clamp(42px, 8vw, 92px);
+  margin-bottom: 18px;
+}
+
+.bd-om-hero-section h1 span {
+  color: #009fe3;
+}
+
+.bd-om-intro-card {
+  max-width: 920px;
+  margin: 40px auto 0;
+  padding: 34px;
+  border-radius: 28px;
+  background:
+    linear-gradient(135deg, rgba(0, 159, 227, 0.16), rgba(255, 255, 255, 0.94)),
+    radial-gradient(circle at top right, rgba(255, 255, 255, 0.8), transparent 42%);
+  border: 1px solid rgba(0, 159, 227, 0.18);
+  box-shadow: 0 22px 60px rgba(18, 38, 63, 0.10);
+}
+
+.bd-om-intro-card h2 {
+  margin: 12px 0;
+  font-size: clamp(28px, 4vw, 46px);
+}
+
+.bd-om-intro-card p {
+  max-width: 680px;
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+.bd-om-label {
+  display: inline-flex;
+  width: fit-content;
+  padding: 8px 14px;
+  border-radius: 999px;
+  background: rgba(0, 159, 227, 0.12);
+  color: #0077ad;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 12px;
+}
+
+.bd-pages-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 420px));
+  justify-content: center;
+  gap: 28px;
+  margin-top: 34px;
+}
+
+.bd-page-card {
+  background: rgba(255, 255, 255, 0.92);
+  border: 1px solid rgba(18, 38, 63, 0.08);
+  border-radius: 26px;
+  padding: 14px;
+  box-shadow: 0 18px 45px rgba(18, 38, 63, 0.10);
+}
+
+.bd-page-card span {
+  display: inline-flex;
+  margin-bottom: 12px;
+  padding: 7px 12px;
+  border-radius: 999px;
+  background: rgba(0, 159, 227, 0.10);
+  color: #0077ad;
+  font-weight: 800;
+  font-size: 13px;
+}
+
+.bd-page-card img {
+  width: 100%;
+  display: block;
+  border-radius: 18px;
+}
